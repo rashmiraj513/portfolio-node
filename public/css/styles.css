@@ -210,6 +210,10 @@ svg {
   margin: 0.5rem 0;
 }
 
+#about .about-info {
+  color: var(--color-sky);
+}
+
 /* Blogs Section */
 #blogs .blogs-section {
   margin: 4rem 0;
@@ -787,6 +791,12 @@ footer {
   background: var(--color-black);
   position: relative;
   padding-inline: 1rem;
+}
+
+#timeline ul li .title {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: serif;
 }
 
 #timeline ul li .title,
