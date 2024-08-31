@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js",
+    "prettier": "prettier --check \"**/*.{js,jsx,json,html,css,ts,tsx,yml,yaml,md}\"",
+    "prettier:write": "prettier --write \"**/*.{js,jsx,json,html,css,ts,tsx,yml,yaml,md}\" --ignore-unknown",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,html,css,json,md}": [
+      "npm run prettier:write"
+    ]
+  },
+  "keywords": [
+    "Rashmi Raj",
+    "Rashmi Raj Portfolio",
+    "Rashmi Raj IIT Patna Portfolio"
+  ],
+  "author": "Rashmi Raj",
+  "license": "ISC",
+  "description": "A portfolio website using NodeJS",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "husky": "^9.1.5",
+    "prettier": "^3.3.3"
+  }
+}
